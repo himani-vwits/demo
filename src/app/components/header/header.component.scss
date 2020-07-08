@@ -1,0 +1,33 @@
+@import "../../../styles.scss";
+
+.navbar-dark {
+  background-color: color("vwag-petrol") !important;
+}
+
+.navbar-brand > img {
+  height: 30px;
+}
+
+.navbar-brand {
+  padding-top: 0;
+}
+
+.menu-in-one-line {
+    display: inline-flex;
+}
+
+.dropdown-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.padding-right {
+  padding-right: 1.5rem;
+}
+
+.padding-right-wiki {
+  padding-right: 0.5rem;
+}
+
+.margin-top {
+  margin-top: 0.22rem;
+}

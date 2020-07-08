@@ -1,1 +1,255 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    padding-bottom: 44px;
+  }
+  
+  :disabled {
+    cursor: not-allowed;
+  }
+  
+  .nav-header {
+    z-index: 1400!important;
+  }
+  
+  .footer {
+    z-index: 1050;
+  }
+  
+  .modal {
+    z-index: 1800!important;
+  }
+  
+  .modal-backdrop {
+    z-index: 1500!important;
+  }
+  
+  .simple-notification-wrapper {
+    z-index: 1500!important;
+  }
+  
+  .tooltip {
+    z-index: 1500;
+  }
+  
+  /* Pageable styles */
+  .page-header {
+    height: 75px;
+    margin-top: 55px;
+    padding-top: 15px;
+    background: white;
+    z-index: 1200!important;
+  }
+  
+  .page-footer {
+    margin-bottom: 40px;
+    padding-bottom: 1rem;
+    background: white;
+  }
+  
+  /*Modal styles*/
+  .modal-header {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  
+  .modal-title {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .modal-sub-title {
+    font-size: 18px;
+  }
+  
+  .modal-alert-icon {
+    font-size: 48px;
+    margin: 15px 15px;
+  }
+  
+  .modal-body hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  @media (max-width: 1200px) {
+    .calendar-table-content .container {
+      min-width: 900px;
+    }
+  
+    .calendar-header .container {
+      min-width: 900px;
+    }
+  
+    .page-footer .btn {
+      font-size: 13px;
+    }
+  
+    .calendar-header.fixed-top {
+      min-width: 900px;
+      position: relative;
+    }
+  
+    .container.calendar-table-content {
+      margin-top: 15px !important;
+    }
+  
+    .container .row h4 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container.calendar-table-content {
+      margin-left: 0;
+    }
+  
+    .page-header {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      max-width: none !important;
+    }
+  
+    .page-footer {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      max-width: none !important;
+    }
+  }
+  
+  @media (max-width: 950px) {
+    .calendar-header.fixed-top {
+      margin-left: 17px;
+    }
+  }
+  
+  /* Color system */
+  
+  // stylelint-disable
+  $white:    #fff !default;
+  $gray-100: #f8f9fa !default;
+  $gray-200: #e9ecef !default;
+  $gray-300: #dee2e6 !default;
+  $gray-400: #ced4da !default;
+  $gray-500: #adb5bd !default;
+  $gray-600: #6c757d !default;
+  $gray-700: #495057 !default;
+  $gray-800: #343a40 !default;
+  $gray-900: #212529 !default;
+  $black:    #000 !default;
+  
+  $grays: () !default;
+  $grays: map-merge((
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ), $grays);
+  
+  $indigo:  #6610f2 !default;
+  $purple:  #6f42c1 !default;
+  $pink:    #e83e8c !default;
+  $red:     #dc3545 !default;
+  $orange:  #fd7e14 !default;
+  $yellow:  #ffc107 !default;
+  $green:   #28a745 !default;
+  $teal:    #20c997 !default;
+  $cyan:    #17a2b8 !default;
+  $vwag-grey: #4c5356;
+  $vwag-petrol: #004666;
+  $vwag-petrol-hover: #003f5b;
+  $vwag-petrol-light: #c6dfef;
+  $vwag-blue-dark: #006384;
+  $vwag-blue-light: #80b0c8;
+  $vwag-green: #95a844;
+  $vwag-green-light: #c2cca6;
+  $vwag-red-dark: #5f1939;
+  $vwag-red: #a21e4d;
+  $vwag-orange-dark: #d8aa00;
+  $vwag-sand: #f6e5bc;
+  $vwag-silver: #a8adb3;
+  
+  $colors: ();
+  $colors: map-merge((
+    "blue":       $vwag-petrol,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800,
+    "vwag-grey": $vwag-grey,
+    "vwag-petrol": $vwag-petrol,
+    "vwag-petrol-hover": $vwag-petrol-hover,
+    "vwag-petrol-light": $vwag-petrol-light,
+    "vwag-blue-dark": $vwag-blue-dark,
+    "vwag-blue-light": $vwag-blue-light,
+    "vwag-green" :$vwag-green,
+    "vwag-green-light": $vwag-green-light,
+    "vwag-red-dark": $vwag-red-dark,
+    "vwag-red": $vwag-red,
+    "vwag-orange-dark": $vwag-orange-dark,
+    "vwag-sand": $vwag-sand,
+    "vwag-silver": $vwag-silver
+  ), $colors);
+  
+  $primary:       $vwag-petrol !default;
+  $secondary:     $gray-600 !default;
+  $success:       $green !default;
+  $info:          $cyan !default;
+  $warning:       $yellow !default;
+  $danger:        $red !default;
+  $light:         $gray-100 !default;
+  $dark:          $gray-800 !default;
+  
+  $theme-colors: ();
+  $theme-colors: map-merge((
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ), $theme-colors);
+  // stylelint-enable
+  
+  /*Bootstrap styles*/
+  @import "../node_modules/bootstrap/scss/bootstrap";
+  
+  /* ngx datatable styles */
+  @import "~@swimlane/ngx-datatable/themes/material.css";
+  @import "~@swimlane/ngx-datatable/assets/icons.css";
+  
+  /* override ngx-datatable (icon.css) font-family 'data-table' to avoid GET .../node_modules/@swimlane/ngx-datatable/assets/fonts/data-table.woff net::ERR_ABORTED 404 (Not Found) */
+  [data-icon],
+  [class^='datatable-icon-'],
+  [class*=' datatable-icon-'] {
+    &:before {
+      font-family: custom-data-table, sans-serif !important;
+    }
+  }
+  
+  @font-face {
+    font-family: 'custom-data-table';
+    src: url('/assets/fonts/ngx-datatable/data-table.eot');
+    src: url('/assets/fonts/ngx-datatable/data-table.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/ngx-datatable/data-table.woff') format('woff'),
+    url('/assets/fonts/ngx-datatable/data-table.ttf') format('truetype'),
+    url('/assets/fonts/ngx-datatable/data-table.svg#data-table') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width:100%;
+
+  background-color: white;
+  border-top: 1px solid color("vwag-petrol");
+}

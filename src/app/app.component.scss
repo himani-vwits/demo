@@ -1,0 +1,17 @@
+@import "../styles.scss";
+
+main {
+  min-width: 540px;
+  position: relative;
+  top: 4rem;
+}
+
+.content-padding {
+  padding-top: 45px;
+}
+
+.container-fluid,
+.row,
+.content-padding {
+  height: 100%;
+}
